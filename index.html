@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+
+    <title>Homepage</title>
+</head>
+<body class="h-screen w-screen bg-cover bg-center bg-[url('/img/pexels-fotios-photos-3022003.jpg')]">
+
+    <div class="navbar flex flex-row w-screen  justify-between p-2">
+        <div class="logo text-white text-2xl">
+            <a href="#">Ruel <span class="text-pink-400 font-bold">Alben</span></a>
+        </div>
+
+        <div class="menu text-white mt-1">
+            <i class="fa-solid fa-bars text-2xl hamburger"></i>
+        </div>
+    </div>
+
+    <div class="survey w-screen h-screen absolute  bg-white  flex justify-center hidden">
+        <a href="anon.html" class="text-black  mt-52">Answer this survey</a>
+    </div>
+
+<div class="message text-white text-5xl font-thin h-screen w-screen flex justify-center mt-32 text-center ">
+    <h1>Hello <span class="font-bold">Michelle</span> <br>Can't wait to say <br>I LOVE <span class="you text-pink-500 font-bold">YOU </span></h1>
+
+</div>
+
+    <script>
+        let sawsaw = document.querySelector(".hamburger");
+        let survey = document.querySelector(".survey");
+
+        sawsaw.addEventListener('click', ()=>{
+            survey.classList.toggle("hidden")
+        })
+let you = document.querySelector(".you")
+function show (){
+    you.classList.toggle("visible")
+}
+function hide (){
+    you.classList.toggle("hidden")
+}
+
+function showing(){
+    if(you.style.display ==='hidden'){
+        show()
+    }
+    else{
+        hide()
+    }
+}
+
+setInterval(showing,2000)
+
+
+    </script>
+</body>
+</html>
