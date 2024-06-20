@@ -626,7 +626,7 @@ video {
 }
 
 .bg-\[url\(\'\/img\/pexels-fotios-photos-3022003\.jpg\'\)\] {
-  background-image: url('/img/pexels-fotios-photos-3022003.jpg');
+  background-image: url('img/pexels-fotios-photos-3022003.jpg');
 }
 
 .bg-cover {
